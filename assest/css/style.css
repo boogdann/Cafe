@@ -1,0 +1,58 @@
+/*global variables*/
+:root {
+    --main-green: #29a19c;
+    --main-grey: #222831;
+    --text-color: #FFF;
+  }
+  
+  :root { 
+    --small: 16px;
+    --medium: 18px;
+    --big: 22px;
+    --max: 30px;
+    --max-max: 150px;
+  
+    --Large_reg: 42px;
+  
+    --maxWidth: 1440px;
+    --containerPadding: 50px;
+  }
+  
+  /*global classes*/
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: var(--medium);
+    color: var(--text-color);
+    background-color: black;
+    width: 100%;
+  }
+
+  main {
+    background-color: var(--main-grey);
+    position: relative;
+    width: var(--maxWidth);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    position: relative;
+    width: var(--maxWidth);
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+  .header-box {
+    background-color: var(--main-grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px var(--containerPadding) 30px var(--containerPadding);
+  }
