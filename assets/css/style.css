@@ -1,0 +1,296 @@
+/*global variables*/
+:root {
+  --main-green: #29a19c;
+  --main-grey: #222831;
+  --text-color: #FFF;
+}
+
+:root { 
+  --small: 16px;
+  --medium: 18px;
+  --big: 24px;
+  --max: 30px;
+  --max-max: 165px;
+  
+  --title: 90px;
+  --title-max: 116px;
+  --Large_reg: 42px;
+  
+  --maxWidth: 1440px;
+  --containerPadding: 50px;
+  --containerPadding-big: 70px;
+}
+/*global variables*/
+
+/*global classes*/
+* {
+  box-sizing: border-box;
+}
+h1, p  {
+  margin: 0;
+}
+a {
+  color: var(--text-color);
+}
+
+.flex-column {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.d-flex { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around;
+}
+
+main {
+  background-color: var(--main-grey);
+  position: relative;
+  width: var(--maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-wave {
+  position: relative;
+  margin-bottom: -5px;
+}
+
+.main-btn {
+  color: var(--text-color);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  display: inline-block;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.white-btn {
+  background-color: var(--main-green);
+}
+.white-btn:hover {
+  transition: 1s;
+  background-color: #3f4e65;
+}
+
+.dark-btn {
+  background-color: var(--main-grey)
+}
+.dark-btn:hover {
+  transition: 1s;
+  background-color: #1c6b68;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: var(--medium);
+  color: var(--text-color);
+  background-color: black;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: var(--maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/*global classes*/
+
+
+
+/*header*/
+.header-box {
+  background-color: var(--main-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px var(--containerPadding) 30px var(--containerPadding);
+}
+
+.header-menu-btn {
+  text-decoration: none;
+  margin-right: 55px;
+  font-size: var(--big);
+}
+
+.select-menu-btn {
+  position: relative;
+}
+
+.select-menu-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 3px;
+  background-color: var(--main-green); 
+}
+
+.header-img {
+  height: 50px;
+}
+/*header*/
+
+
+
+/*section 1*/
+.section-home-box {
+  background-color: var(--main-grey);
+  margin-bottom: 30px;
+  padding: 20px var(--containerPadding) 0 var(--containerPadding);
+}
+
+.home-title {
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-family: 'GrandHotel';
+  font-size: 155px;
+}
+
+.home-info-title {
+  font-size: var(--max);
+  margin: 0;
+  margin-top: 10px;
+  line-height: 70px;
+}
+
+.home-info-text {
+  font-size: var(--small);
+  width: 490px;
+  line-height: 24px;
+  font-family:'MontserratV';
+  margin-bottom: 20px;
+}
+
+.home-img {
+  top: 10px;
+  right: 0px;
+  z-index: 0;
+  position: absolute;
+}
+/*section 1*/
+
+
+
+
+/*section 2*/
+/*ИЛЬЯ*/
+/*section 2*/
+
+
+
+/*section 3*/
+/*section 3.1 Егор*/
+.section-about-box {
+  background-color: var(--main-grey);
+  padding: 20px calc(var(--containerPadding)*2) 20px calc(var(--containerPadding)*1);
+}
+
+.sect-about-1 {
+  margin: -40px 0 60px 0;
+}
+
+.hot-coffees-left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+}
+.hot-coffees-title {
+ font-weight: 100;
+ font-family: 'GrandHotel';
+ text-align: right;
+ font-size: var(--title-max);
+ line-height: 120px;
+ letter-spacing: 4px;
+ margin: 0;
+ margin-bottom: 80px;
+}
+.hot-coffees-text {
+ margin-bottom: 30px;
+ margin-top: 30px;
+ width: 600px;
+ text-align: left;
+ line-height: 40px;
+ font-family:'MontserratV';
+ font-size: var(--big);
+}
+/*section 3.1 Егор*/
+
+
+/*section 3.2 Илья*/
+/*section 3.2 Илья*/
+
+
+/*section 3.2 Катя*/
+/*section 3.2 Катя*/
+
+/*section 3*/
+
+
+
+/*section 4*/
+/*КАТЯ*/
+/*section 4*/
+
+
+/*section 5*/
+/*БОГДАН*/
+/*section 5*/
+
+
+
+/*section 6*/
+.section-pre-footer-box {
+  padding: 20px var(--containerPadding-big) 20px var(--containerPadding-big);
+  background-color: var(--main-green);
+}
+
+.section-pre-footer-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.pre-footer-img {
+  margin-top: -15px;
+  height: 70px;
+}
+
+.footer-tabels {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-table {
+  margin-left: 120px;
+}
+
+.footer-info-title {
+  font-size: calc(var(--max) * 1.2);
+  margin-bottom: 40px;
+}
+
+.footer-tabels p {
+  font-size: var(--big);
+  letter-spacing: 1px;
+  font-family: 'MontserratV';
+  line-height: 35px;
+}
+/*section 6*/
+
+
+
+
+/*footer*/
+/*КАТЯ*/
+/*footer*/
