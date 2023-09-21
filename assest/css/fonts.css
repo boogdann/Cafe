@@ -5,3 +5,31 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GrandHotel';
+    src: url('../fonts/GrandHotel.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    
+    font-family: 'MontserratRegular';
+    src: url('../fonts/MontserratRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GrandHotel400';
+    src: url('../fonts/GrandHotel400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratV';
+    src: url('../fonts/MontserratV.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
