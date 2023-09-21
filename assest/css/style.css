@@ -87,3 +87,42 @@
   height: 50px;
 }
 /*header*/
+
+.section-home-box {
+  background-color: var(--main-grey);
+  margin: 0px;
+  margin-bottom: 30px;
+  padding: 40px var(--containerPadding) 0px var(--containerPadding);
+}
+
+.home-title {
+  font-weight: 100;
+  font-family: 'GrandHotel400';
+  font-size: var(--max-max);
+  margin: 0;
+}
+
+.home-info-title {
+  font-size: var(--max);
+  margin: 0;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  line-height: 70px;
+}
+
+.home-info-text {
+  font-weight: 100;
+  font-stretch: expanded;
+  font-size: var(--small);
+  width: 490px;
+  line-height: 23px;
+  font-family:'MontserratV';
+  margin-bottom: 20px;
+}
+
+.home-img {
+  top: 10px;
+  right: 0px;
+  z-index: 0;
+  position: absolute;
+}
