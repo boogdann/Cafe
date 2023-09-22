@@ -231,16 +231,88 @@ body {
 /*section 3.2 Илья*/
 
 
-/*section 3.2 Катя*/
-/*section 3.2 Катя*/
-
+/*section 3.3 Катя*/
+.voucher-title {
+  font-weight: 100;
+  font-family: 'GrandHotel';
+  font-size: var(--title-max);
+  line-height: 120px;
+  margin: 0;
+  margin-top: 80px;
+}
+.voucher-img {
+  margin: 20px 0 0px 0;
+}
+/*section 3.3 Катя*/
 /*section 3*/
 
-
-
 /*section 4*/
-/*КАТЯ*/
+.reviews-title {
+  font-weight: 100;
+  font-family: 'GrandHotel';
+  font-size: var(--title);
+  line-height: 120px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.reviews-items {
+  display: flex;
+  flex-direction: row;
+  margin: 0px -70px;
+}
+.reviews-item {
+  width: 500px;
+  margin: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-name {
+  font-weight: 10;
+  font-family: 'GrandHotel';
+  font-size: calc(var(--max) * 1.8);
+  line-height: 120px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.review-text {
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  font-family:'MontserratV';
+}
 /*section 4*/
+
+/*section we are open*/
+.section-open-days-text {
+  font-size: 34px;
+  margin-top: 70px;
+  margin-bottom: 0;
+  font-family: 'Montserrat'; 
+}
+
+.section-open-time-text {
+  padding-bottom: 35px;
+  font-size: 34px;
+  margin-top: 0;
+  font-family: 'MontserratRegular';
+}
+
+.section-open-box {
+  position: relative;
+  transition: 1px;
+  text-align: center;
+  font-size: var(--big);
+  font-family: 'GrandHotel'; 
+  background-color: var(--main-green);
+}
+
+.open-title {
+  font-weight: 100;
+  font-size: var(--title-max);
+}
+/*section we are open*/
 
 
 /*section 5*/
@@ -349,9 +421,25 @@ body {
 }
 /*section 6*/
 
-
-
-
 /*footer*/
-/*КАТЯ*/
+.footer-box {
+  background-color: var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px var(--containerPadding) 40px var(--containerPadding);
+}
+
+.footer-menu-btn {
+  text-decoration: none;
+  margin-right: 65px;
+  font-size: calc((--medium) * 1.4);
+  letter-spacing: 1px;
+}
+
+.footer-img {
+  font-size: 30px;
+  margin-left: 40px;
+  color: var(--text-color);
+}
 /*footer*/
