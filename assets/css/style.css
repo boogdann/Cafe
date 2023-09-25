@@ -30,7 +30,9 @@ h1, p  {
   margin: 0;
 }
 a {
+  position: relative;
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .flex-column {
@@ -85,6 +87,7 @@ main {
 }
 
 body {
+  scroll-behavior: smooth;
   position: relative;
   padding: 0;
   margin: 0;
@@ -116,31 +119,35 @@ body {
 }
 
 .header-menu-btn {
+  color: var(--text-color);
+
+  letter-spacing: 2px;
+  display: inline-block;
+  transition: 1s;
+  cursor: pointer;
   text-decoration: none;
   margin-right: 55px;
   font-size: var(--big);
 }
 
-.select-menu-btn {
-  position: relative;
+.header-menu-btn::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 3px;
+	background-color: var(--main-green);
 }
 
-.select-menu-btn::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-  width: 90%;
-  height: 3px;
-  background-color: var(--main-green); 
+.header-menu-btn:hover:before {
+  transition: 0.35s;
+	width: 100%;
 }
 
 .header-img {
   height: 50px;
 }
 /*header*/
-
-
 
 /*section 1*/
 .section-home-box {
