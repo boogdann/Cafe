@@ -183,7 +183,45 @@ body {
 
 
 /*section 2*/
-/*ИЛЬЯ*/
+.section-order-box {
+  position: relative;
+  background-color: var(--main-green);
+  padding: 20px calc(var(--containerPadding)*2.5) 20px calc(var(--containerPadding)*2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.order-left {
+  margin-top: -45px;
+  width: 450px;
+}
+
+.order-title {
+  font-weight: 100;
+  font-family: 'GrandHotel';
+  font-size: calc(var(--title)*1.4);
+  letter-spacing: 4px;
+  line-height: 120px;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.order-text {
+  margin-top: 30px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  width: 610px;
+  font-family:'MontserratV';
+  text-align: right;
+  font-size: 23px;
+}
+
+.order-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 /*section 2*/
 
 
@@ -228,6 +266,35 @@ body {
 
 
 /*section 3.2 Илья*/
+.white-coffees-left {
+  width: 400px;
+  margin-top: -20px;
+}
+
+.white-coffees-title {
+ font-weight: 100;
+ font-family: 'GrandHotel';
+ font-size: var(--title-max);
+ line-height: 120px;
+ letter-spacing: 4px;
+ margin: 0;
+ margin-bottom: 80px;
+}
+.white-coffees-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.white-coffees-text {
+ margin-top: 30px;
+ line-height: 30px;
+ width: 600px;
+ text-align: right;
+ line-height: 40px;
+ font-family:'MontserratV';
+ font-size: 21px;
+}
 /*section 3.2 Илья*/
 
 
