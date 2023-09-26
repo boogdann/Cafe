@@ -504,7 +504,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px var(--containerPadding) 40px var(--containerPadding);
+  padding: 30px var(--containerPadding);
 }
 
 .footer-box::after {
@@ -519,8 +519,9 @@ body {
 .footer-menu-btn {
   text-decoration: none;
   margin-right: 65px;
-  font-size: calc((--medium) * 1.4);
+  font-size: var(--medium);
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .footer-menu-btn::before {
