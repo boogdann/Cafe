@@ -5,17 +5,18 @@
   --text-color: #FFF;
 }
 
-:root { 
+:root {
   --small: 16px;
   --medium: 18px;
   --big: 24px;
   --max: 30px;
+  --max2: 31px;
   --max-max: 165px;
-  
+
   --title: 90px;
   --title-max: 116px;
   --Large_reg: 42px;
-  
+
   --maxWidth: 1440px;
   --containerPadding: 50px;
   --containerPadding-big: 70px;
@@ -36,13 +37,13 @@ a {
 }
 
 .flex-column {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
-.d-flex { 
-  display: flex; 
-  align-items: center; 
+.d-flex {
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -60,11 +61,13 @@ main {
 }
 
 .main-btn {
+  height: 58px;
+  width: 248px;
   color: var(--text-color);
   padding: 10px 30px;
   border-radius: 15px;
-  font-size: var(--max);
-  letter-spacing: 0.5px;
+  font-size: var(--max2);
+  letter-spacing: 1.25px;
   display: inline-block;
   transition: 1s;
   cursor: pointer;
@@ -115,19 +118,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px var(--containerPadding) 30px var(--containerPadding);
+  padding: 43px calc(var(--containerPadding-big)*0.93) 30px var(--containerPadding);
 }
 
 .header-menu-btn {
+  text-align: justify;
+  width: 70px;
   color: var(--text-color);
-
+  padding-left: 2px;
   letter-spacing: 2px;
   display: inline-block;
   transition: 1s;
   cursor: pointer;
   text-decoration: none;
   font-weight: 700;
-  margin-right: 48px;
+  margin-right: 60px;
+  /*padding-right: 10px;*/
   font-size: var(--big);
 }
 
@@ -145,6 +151,7 @@ body {
 	width: 100%;
 }
 
+
 .header-img {
   height: 50px;
 }
@@ -153,83 +160,95 @@ body {
 /*section 1*/
 .section-home-box {
   background-color: var(--main-grey);
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   padding: 20px var(--containerPadding) 0 var(--containerPadding);
 }
 
+.home-info {
+  padding-left: 6px;
+}
+
 .home-title {
+  margin-left: -5px;
   font-weight: 100;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   font-family: 'GrandHotel';
-  font-size: 155px;
+  font-size: 158px;
 }
 
 .home-info-title {
-  font-size: var(--max);
-  letter-spacing: 2px;
-  margin: 0;
-  margin-top: 10px;
-  line-height: 70px;
+  padding-left: 1px;
+  font-size: 31px;
+  letter-spacing: 3.45px;
+  margin-top: 25px;
 }
 
 .home-info-text {
-  font-size: var(--small);
-  width: 490px;
+  word-spacing: 2px;
+  margin-top: -11px;
+  padding-left: 3px;
   line-height: 24px;
-  font-family:'MontserratV';
-  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: var(--small);
+  width: 484px;
+  font-family:'Montserrat-Thin';
+  margin-bottom: 22px;
 }
 
 .home-img {
-  top: 10px;
+  top: 14px;
   right: 0px;
   z-index: 0;
   position: absolute;
 }
 /*section 1*/
 
-
-
-
 /*section 2*/
 .section-order-box {
-  position: relative;
   background-color: var(--main-green);
-  padding: 20px calc(var(--containerPadding)*2) 20px calc(var(--containerPadding)*1);
+  padding: 12px calc(var(--containerPadding)) 20px calc(var(--containerPadding));
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .order-left {
-  margin-top: -45px;
-  width: 450px;
+  margin-left: 85px;
+  margin-top: -90px;
+  width: 492px;
 }
 
 .order-title {
   font-weight: 100;
   font-family: 'GrandHotel';
-  font-size: var(--title-max);
-  letter-spacing: 5px;
-  line-height: 120px;
-  margin: 0;
-  margin-bottom: 80px;
+  font-size: 126px;
+  letter-spacing: 4.75px;
+  line-height: 113px;
+  margin-bottom: 91px;
 }
 
 .order-text {
+  float: right;
   margin-top: 30px;
-  line-height: 40px;
-  width: 590px;
-  font-family:'MontserratV';
+  margin-left: 5px;
   text-align: right;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-family:'MontserratV';
   font-size: var(--big);
 }
 
 .order-right {
-  display: flex;
+  float: right;
+  text-align: right;
+  width: 640px;
   flex-direction: column;
-  align-items: flex-end;
 }
+
+.order-img {
+  margin-top: 22px;
+  margin-left: 36px;
+}
+
 /*section 2*/
 
 
@@ -366,7 +385,7 @@ body {
   font-size: calc(var(--max)*1.2);
   margin-top: 70px;
   margin-bottom: 5px;
-  font-family: 'Montserrat'; 
+  font-family: 'Montserrat';
 }
 
 .section-open-time-text {
@@ -381,7 +400,7 @@ body {
   transition: 1px;
   text-align: center;
   font-size: var(--big);
-  font-family: 'GrandHotel'; 
+  font-family: 'GrandHotel';
   background-color: var(--main-green);
 }
 
