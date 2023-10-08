@@ -19,7 +19,7 @@
 
   --maxWidth: 1440px;
   --containerPadding: 50px;
-  --containerPadding-big: 70px;
+  --containerPadding-big: 60px;
 }
 /*global variables*/
 
@@ -61,8 +61,6 @@ main {
 }
 
 .main-btn {
-  height: 58px;
-  width: 248px;
   color: var(--text-color);
   padding: 10px 30px;
   border-radius: 15px;
@@ -101,6 +99,17 @@ body {
   width: 100%;
 }
 
+.background-main {
+  position:absolute;
+  width: 1440px;
+  height: 100%;
+  background-image: url("/assets/img/background.png");
+  z-index: 100;
+  left: 0; 
+  right: 0; 
+  margin: auto;
+}
+
 .container {
   position: relative;
   width: var(--maxWidth);
@@ -118,7 +127,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 43px calc(var(--containerPadding-big)*0.93) 30px var(--containerPadding);
+  padding: 43px calc(var(--containerPadding-big)) 30px var(--containerPadding);
 }
 
 .header-menu-btn {
@@ -132,7 +141,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-weight: 700;
-  margin-right: 60px;
+  margin-right: 50px;
   /*padding-right: 10px;*/
   font-size: var(--big);
 }
@@ -206,7 +215,7 @@ body {
 /*section 2*/
 .section-order-box {
   background-color: var(--main-green);
-  padding: 12px calc(var(--containerPadding)) 20px calc(var(--containerPadding));
+  padding: 12px calc(var(--containerPadding)) 0px calc(var(--containerPadding));
   display: flex;
   align-items: center;
 }
@@ -257,7 +266,7 @@ body {
 /*section 3.1 Егор*/
 .section-about-box {
   background-color: var(--main-grey);
-  padding: 20px calc(var(--containerPadding)*2) 20px calc(var(--containerPadding)*1);
+  padding: 10px calc(var(--containerPadding)*2) 20px calc(var(--containerPadding)*1);
 }
 
 .sect-about-1 {
@@ -274,20 +283,27 @@ body {
  font-weight: 100;
  font-family: 'GrandHotel';
  text-align: right;
- font-size: var(--title-max);
- line-height: 120px;
- letter-spacing: 5px;
+ font-size: calc(var(--title-max) * 1.1);
+ line-height: 115px;
+ letter-spacing: 6px;
  margin: 0;
- margin-bottom: 80px;
+ margin-bottom: 40px;
+ margin-top: 0px;
 }
 .hot-coffees-text {
  margin-bottom: 30px;
  margin-top: 30px;
- width: 580px;
+ width: 600px;
  text-align: left;
  line-height: 40px;
  font-family:'MontserratV';
  font-size: var(--big);
+}
+.hot-coffees-img {
+  padding-left: 5px;
+}
+.about-btn {
+  margin-top: 60px;
 }
 /*section 3.1 Егор*/
 
@@ -295,17 +311,18 @@ body {
 /*section 3.2 Илья*/
 .white-coffees-left {
   width: 400px;
-  margin-top: -20px;
+  padding-bottom: 100px;
 }
 
 .white-coffees-title {
  font-weight: 100;
  font-family: 'GrandHotel';
  font-size: var(--title-max);
- line-height: 120px;
- letter-spacing: 5px;
+ line-height: 115px;
+ letter-spacing: 9px;
  margin: 0;
- margin-bottom: 80px;
+ margin-bottom: 90px;
+ padding-top: 20px;
 }
 .white-coffees-right {
   display: flex;
@@ -329,14 +346,17 @@ body {
 .voucher-title {
   font-weight: 100;
   font-family: 'GrandHotel';
-  font-size: var(--title-max);
-  letter-spacing: 1px;
+  font-size: calc(var(--title-max) * 1.1);
   line-height: 120px;
   margin: 0;
   margin-top: 50px;
 }
 .voucher-img {
-  margin: 12px 0px;
+  margin: 20px 0px 0px 20px;
+  padding-bottom: 10px;
+}
+.voucher-btn {
+  margin-left: 50px;
 }
 /*section 3.3 Катя*/
 /*section 3*/
@@ -347,7 +367,7 @@ body {
   font-family: 'GrandHotel';
   font-size: var(--title);
   line-height: 120px;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   letter-spacing: 1px;
@@ -358,8 +378,8 @@ body {
   margin: 0px -70px;
 }
 .reviews-item {
-  width: 500px;
-  margin: 0px 70px;
+  width: 495px;
+  margin: 0px 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,12 +388,12 @@ body {
   font-weight: 10;
   font-family: 'GrandHotel';
   font-size: calc(var(--max) * 1.8);
-  line-height: 120px;
+  line-height: 110px;
   margin-top: 20px;
   margin-bottom: 0;
 }
 .review-text {
-  width: 88%;
+  padding: 0 10px 0 10px;
   text-align: center;
   font-size: 24px;
   font-family:'MontserratV';
@@ -391,6 +411,7 @@ body {
 .section-open-time-text {
   padding-bottom: 35px;
   font-size: calc(var(--max)*1.2);
+  letter-spacing: 1.5px;
   margin-top: 0;
   font-family: 'MontserratV';
 }
@@ -399,14 +420,14 @@ body {
   position: relative;
   transition: 1px;
   text-align: center;
-  font-size: var(--big);
+  font-size: calc(var(--big));
   font-family: 'GrandHotel';
   background-color: var(--main-green);
 }
 
 .open-title {
   font-weight: 100;
-  font-size: var(--title);
+  font-size: calc(var(--title)*1.1);
   margin-bottom: 50px;
   letter-spacing: 4px;
 }
@@ -415,9 +436,10 @@ body {
 
 /*section 5*/
 .section-workers-box {
-  padding: 0px 10px 20px 10px;
+  padding: 0px 11px 20px 11px;
   background-color: var(--main-grey);
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: -5px;
 }
 
 .workers-title {
@@ -435,6 +457,7 @@ body {
   font-style: normal;
   text-align: center;
   font-family: 'MontserratRegular';
+  
 }
 
 .session-workers-box-text {
@@ -477,7 +500,7 @@ body {
 
 /*section 6*/
 .section-pre-footer-box {
-  padding: 20px var(--containerPadding-big) 20px var(--containerPadding-big);
+  padding: 5px var(--containerPadding-big) 20px var(--containerPadding-big);
   background-color: var(--main-green);
 }
 
@@ -498,14 +521,16 @@ body {
 }
 
 .footer-table {
-  margin-left: 120px;
+  margin-top: -10px;
+  padding-right: 10px;
+  margin-left: 110px;
   display: flex;
   flex-direction: column;
 }
 
 .footer-info-title {
   font-size: calc(var(--max) * 1.2);
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .footer-tabels p, a {
@@ -513,7 +538,6 @@ body {
   letter-spacing: 1px;
   font-family: 'MontserratV';
   line-height: 35px;
-  margin-bottom: 5px;
 }
 /*section 6*/
 
@@ -523,7 +547,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px var(--containerPadding);
+  padding: 30px calc(var(--containerPadding)*1.2) ;
 }
 
 .footer-box::after {
@@ -534,10 +558,13 @@ body {
 	height: 12px;
 	background-color: var(--main-grey);
 }
+.pre-footer-img {
+  z-index: 100;
+}
 
 .footer-menu-btn {
   text-decoration: none;
-  margin-right: 65px;
+  margin-right: 70px;
   font-size: var(--medium);
   letter-spacing: 1px;
   font-weight: 700;
@@ -559,7 +586,7 @@ body {
 
 .footer-img {
   font-size: 30px;
-  margin-left: 40px;
+  margin-left: 30px;
   color: var(--text-color);
 }
 /*footer*/
