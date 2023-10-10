@@ -270,7 +270,7 @@ body {
 }
 
 .sect-about-1 {
-  margin: -40px 0 60px 0;
+  margin: -45px 0 60px 0;
 }
 
 .hot-coffees-left {
@@ -287,6 +287,7 @@ body {
  line-height: 115px;
  letter-spacing: 6px;
  margin: 0;
+ margin-right: -5px;
  margin-bottom: 40px;
  margin-top: 0px;
 }
@@ -300,10 +301,15 @@ body {
  font-size: var(--big);
 }
 .hot-coffees-img {
-  padding-left: 5px;
+  padding-left: 14px;
+}
+.about-btn-size{
+  height: 59px;
 }
 .about-btn {
-  margin-top: 60px;
+  margin-top: 55px;
+  margin-right: -3px; 
+  padding-bottom: 40px;
 }
 /*section 3.1 Егор*/
 
@@ -321,6 +327,7 @@ body {
  line-height: 115px;
  letter-spacing: 9px;
  margin: 0;
+ margin-left: 11px;
  margin-bottom: 90px;
  padding-top: 20px;
 }
@@ -339,6 +346,18 @@ body {
  font-family:'MontserratV';
  font-size: var(--big);
 }
+
+.white-coffees-img{
+  padding-bottom: 1px;
+  margin-top: 4px;
+  margin-left: 100px;
+}
+
+.white-coffie-btn{
+  margin-bottom: -6px;
+  margin-left: 15px;
+}
+
 /*section 3.2 Илья*/
 
 
@@ -352,7 +371,8 @@ body {
   margin-top: 50px;
 }
 .voucher-img {
-  margin: 20px 0px 0px 20px;
+  margin-left: 30px;
+  margin-top: 18px;
   padding-bottom: 10px;
 }
 .voucher-btn {
