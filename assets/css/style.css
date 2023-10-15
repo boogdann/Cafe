@@ -131,17 +131,16 @@ body {
 }
 
 .header-menu-btn {
+  margin-top: -2px;
+  padding-left: 3px;
   text-align: justify;
-  width: 70px;
   color: var(--text-color);
-  padding-left: 2px;
   letter-spacing: 2px;
   display: inline-block;
   transition: 1s;
   cursor: pointer;
   text-decoration: none;
   font-weight: 700;
-  margin-right: 50px;
   /*padding-right: 10px;*/
   font-size: var(--big);
 }
@@ -160,10 +159,14 @@ body {
 	width: 100%;
 }
 
-
 .header-img {
   height: 50px;
 }
+
+.header-menu-btn-about {
+  margin-left: 42px;
+}
+
 /*header*/
 
 /*section 1*/
@@ -599,7 +602,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 35px calc(var(--containerPadding)*1.25) ;
+  padding: 35px 25px 35px calc(var(--containerPadding)*1.25);
 }
 
 .footer-box::after {
@@ -616,10 +619,16 @@ body {
 
 .footer-menu-btn {
   text-decoration: none;
-  margin-right: 70px;
   font-size: var(--medium);
-  letter-spacing: 1px;
-  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.footer-menu-btn-about {
+  margin-left: 63px;
+}
+
+.footer-menu-btn-shop {
+  margin-left: 60px;
 }
 
 .footer-menu-btn::before {
@@ -640,5 +649,25 @@ body {
   font-size: 30px;
   margin-left: 30px;
   color: var(--text-color);
+}
+
+.footer-contacts {
+  margin-top: -5px;
+  margin-right: -5px;
+  transform: scale(0.75);
+}
+
+.footer-contact {
+  /*margin-left: 70px;*/
+}
+
+
+.footer-contact-twitter {
+  margin-right: 15px;
+}
+
+.footer-contact-instagram {
+  margin-right: 29px;
+  margin-left: 60px;
 }
 /*footer*/
