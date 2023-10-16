@@ -103,7 +103,7 @@ body {
   position:absolute;
   width: 1440px;
   height: 100%;
-  background-image: url("/assets/img/background.png");
+  background-image: url("../img/background.png");
   z-index: 1000;
   left: 0; 
   right: 0; 
