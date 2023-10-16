@@ -668,17 +668,19 @@ body {
 }
 
 .footer-menu-btn {
+  font-weight: 300;
   text-decoration: none;
+  font-family: 'Montserrat';
   font-size: var(--medium);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .footer-menu-btn-about {
-  margin-left: 63px;
+  margin-left: 68px;
 }
 
 .footer-menu-btn-shop {
-  margin-left: 60px;
+  margin-left: 64px;
 }
 
 .footer-menu-btn::before {
@@ -719,5 +721,9 @@ body {
 .footer-contact-instagram {
   margin-right: 29px;
   margin-left: 60px;
+}
+
+.fa-facebook-f {
+  margin-left: 10px;
 }
 /*footer*/
