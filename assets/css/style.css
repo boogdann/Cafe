@@ -260,6 +260,10 @@ body {
 .order-img {
   margin-top: 22px;
   margin-left: 36px;
+  transition: 0.5s;
+}
+.order-img:hover {
+  transform: scale(1.01);
 }
 
 /*section 2*/
@@ -304,9 +308,15 @@ body {
   font-family:'MontserratV';
   font-size: var(--big);
 }
+
 .hot-coffees-img {
   padding-left: 14px;
+  transition: 0.5s;
 }
+.hot-coffees-img:hover {
+  transform: scale(1.01);
+}
+
 .about-btn-size{
   height: 59px;
 }
@@ -351,6 +361,11 @@ body {
   padding-bottom: 7px;
   margin-top: 4px;
   margin-left: 100px;
+  transition: 0.5s;
+}
+
+.white-coffees-img:hover {
+  transform: scale(1.01);
 }
 
 .white-coffie-btn{
@@ -370,11 +385,18 @@ body {
   line-height: 120px;
   margin-top: 45px;
 }
+
 .voucher-img {
   margin-left: 30px;
   margin-top: 18px;
   padding-bottom: 10px;
+  transition: 0.5s;
 }
+
+.voucher-img:hover {
+  transform: scale(1.01);
+}
+
 .voucher-btn {
   margin-left: 50px;
 }
@@ -404,6 +426,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.review-img {
+  transition: 0.5s;
+}
+
+.review-img:hover {
+  transform: scale(1.02);
 }
 
 .review-name {
@@ -490,16 +520,31 @@ body {
 .section-worker1-img{
   margin-top: -5px;
   margin-right: -10px;
+  transition: 0.5s;
+}
+
+.section-worker1-img:hover{
+  transform: scale(1.02);
 }
 
 .section-worker2-img{
   margin-top: -5px;
   margin-right: -1px;
+  transition: 0.5s;
+}
+
+.section-worker2-img:hover{
+  transform: scale(1.02);
 }
 
 .section-worker3-img{
   margin-top: -7px;
   margin-right: 10px;
+  transition: 0.5s;
+}
+
+.section-worker3-img:hover{
+  transform: scale(1.02);
 }
 
 .section-worker-box {
@@ -650,16 +695,16 @@ body {
   color: var(--text-color);
 }
 
+.footer-img:hover {
+  color: var(--main-grey);
+  transition: 0.5s;
+}
+
 .footer-contacts {
   margin-top: -5px;
   margin-right: -5px;
   transform: scale(0.75);
 }
-
-.footer-contact {
-  /*margin-left: 70px;*/
-}
-
 
 .footer-contact-twitter {
   margin-right: 15px;
