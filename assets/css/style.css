@@ -108,6 +108,7 @@ body {
   left: 0; 
   right: 0; 
   margin: auto;
+
 }
 
 .container {
@@ -411,7 +412,7 @@ body {
   font-family: 'GrandHotel';
   font-size: calc(var(--max) * 1.8);
   line-height: 110px;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 2px;
 }
 
@@ -424,8 +425,6 @@ body {
   font-size: 24px;
   font-family:'MontserratV';
 }
-
-
 /*section 4*/
 
 /*section we are open*/
