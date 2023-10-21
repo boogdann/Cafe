@@ -32,7 +32,7 @@ button {
   border: none;
 }
 
-h1, p  {
+h1, h2,  p  {
   margin: 0;
 }
 
@@ -67,6 +67,8 @@ main {
 }
 
 .main-btn {
+  font-family: 'Montserrat';
+  font-width: 700;
   color: var(--text-color);
   padding: 10px 30px;
   border-radius: 15px;
@@ -196,6 +198,7 @@ body {
 }
 
 .home-info-title {
+  margin-bottom: 24px;
   padding-left: 1px;
   font-size: 31px;
   letter-spacing: 3.45px;
@@ -211,7 +214,7 @@ body {
   font-size: var(--small);
   width: 484px;
   font-family:'Montserrat-Thin';
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .home-img {
