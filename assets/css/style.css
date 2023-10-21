@@ -27,9 +27,15 @@
 * {
   box-sizing: border-box;
 }
+
+button {
+  border: none;
+}
+
 h1, p  {
   margin: 0;
 }
+
 a {
   position: relative;
   color: var(--text-color);
